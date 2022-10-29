@@ -1,7 +1,8 @@
 import axios from 'axios'
 import Noty from 'noty'
-console.log('Hello from App JS');
-// client side. the console logs here are dispplayed in the browser. 
+import { initAdmin } from './admin'
+
+
 let addToCart = document.querySelectorAll('.add-to-cart')
 let cartCounter = document.querySelector('#cartCounter')
 function updateCart(pizza){
@@ -18,7 +19,7 @@ function updateCart(pizza){
     }).catch(err => {
         new Noty({
             type: 'error', 
-            timeout:  590, 
+            timeout:  590,
             text: 'Sorry, something went wrong, please try again later',
             layout: 'bottomCenter'
             // progressBar: false;
@@ -38,3 +39,16 @@ addToCart.forEach((btn) => {
     })
 })
 //  this automatically compiles and goes into the public folder due to laravel mix. 
+
+
+// not working:
+
+// const alertMsg = docuemnt.querySelector('#success-alert')
+// if(alertMsg){
+//     setTimeout(() => {
+//         alertMsg.remove()
+//     }, 2000)
+// }
+
+
+initAdmin()

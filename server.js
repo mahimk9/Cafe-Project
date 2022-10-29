@@ -1,4 +1,6 @@
 require('dotenv').config();
+const passport = require('passport');
+const session = require('express-session');
 const express = require('express'); 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -8,7 +10,6 @@ const expressLayout = require('express-ejs-layouts');
 const path = require('path');
 const mongoose = require('mongoose');
 const flash = require('express-flash');
-const session = require('express-session');
 const MongoDbStore = require('connect-mongo');
 // MongoDbStore(session)
 // Database connection
@@ -27,6 +28,8 @@ mongoose.connect(url, {
     connection.once('open', () => {
         console.log('Database Connected');
     });
+
+    
 
 
 // session store
@@ -51,16 +54,21 @@ app.use(session({
 }))
 
 app.use(flash())
-
+const passportInit = require('./app/config/passport')
+    passportInit(passport)  //passing what we required above
+    app.use(passport.initialize())
+    app.use(passport.session())
 //assets to tell the server where assets are
 
 app.use(express.static('public'));
-app.use(express.json());
+app.use(express.urlencoded({extended: false})); // to get form data such as register
+app.use(express.json());    // to get the json data
 
 // Global middleware (to help show total qty ddefaullt in layout ejs near cart), to make session avaialble for that cart 
 
 app.use((req, res, next) => {
     res.locals.session = req.session
+    res.locals.user = req.user
     next()
 })
 
