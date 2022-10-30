@@ -7,7 +7,7 @@
   "name": "Masala Dosa",
   "image": "masaladoa.jpeg",
   "price": "45",
-  "Description": "This comes with a sabzi of potato"
+  "Description": "This comes with a sabzi of potato and spicy way"
 },{
   "name": "Pav Bhaji dosa",
   "image": "pavbhaji.jpeg",
@@ -22,7 +22,7 @@
   "name": "Butter Sada",
   "image": "butterdosa.jpeg",
   "price": "35",
-  "Description": "Butter over your crispy dosa"
+  "Description": "Butter over your crispy dosa along with spice" 
 },{
   
   "name": "Veg. Frankie",
@@ -33,12 +33,12 @@
   "name": "Cheese Frankie",
   "image": "cheesefrankie.jpeg",
   "price": "65",
-  "Description": "Cheese along with veg Frankie"
+  "Description": "Cheese along with veg Frankie along with spice"
 },{
   "name": "Schezwan Frankie",
   "image": "schezwanfrankie.jpeg",
   "price": "50",
-  "Description": "Schezwan along with veg frankie to give spicy flavour to the roll"
+  "Description": "Schezwan along with vegfrankie to give spicy flavour"
 },{
   
   "name": "Lime Juice",
@@ -54,7 +54,7 @@
   "name": "Sugarcane",
   "image": "sugarcane.jpeg",
   "price": "60",
-  "Description": "Sugarcane straight from farms"
+  "Description": "Sugarcane straight from farms along with icecube"
 },{
   "name": "Pineapple",
   "image": "pineapple.jpeg",
@@ -65,12 +65,12 @@
   "name": "Veg. Sandwich",
   "image": "vegsandwich.jpeg",
   "price": "25",
-  "Description": "Filled with vegetables like capsicum, cucumber, tomatoes and potato"
+  "Description": "Filled with veggies capsicum, cucumber, tomatoes & potato"
 },{
   "name": "Cheese Sandwich",
   "image": "cheesesandwich.jpeg",
   "price": "60",
-  "Description": "Cheese along with veg sandwich"
+  "Description": "Cheese along with veg sandwich along with added veggies"
 },{
   "name": "Grilled Sandwich",
   "image": "grilledsandwich.jpeg",
@@ -86,7 +86,7 @@
   "name": "Chowpati Bhel",
   "image": "chowpatybhel.jpeg",
   "price": "45",
-  "Description": "Authentic Bhel in classic style"
+  "Description": "Authentic Bhel in classic style along with spices"
 },{
   "name": "Chinese Bhel",
   "image": "chinesebhel.jpeg",
@@ -96,12 +96,12 @@
   "name": "Sev Batatapuri",
   "image": "sevbatatapuri.jpeg",
   "price": "45",
-  "Description": "Sev + Potato + pani puri"
+  "Description": "Sev + Potato + pani puri along with spices"
 },{
   "name": "Dahi Batata Puri",
   "image": "dahibatatapuri.jpeg",
   "price": "50",
-  "Description": "Dahi + Potato + pani puri"
+  "Description": "Dahi + Potato + pani puri along with spices"
 },{
 
   "name": "Veg Rice",
@@ -122,7 +122,7 @@
   "name": "Manchurian",
   "image": "manchurian.jpeg",
   "price": "70",
-  "Description": "Cabbage balls flavoured with the chinese sauces"
+  "Description": "DRY Manchurian"
 },{
   "name": "Veg. Crispy",
   "image": "vegcrispy.jpeg",
@@ -132,5 +132,5 @@
   "name": "Pizza",
   "image": "pizza.png",
   "price": "100",
-  "Description": "Fresh Italian Bread with Exotic mix of veggies and cheese with your favourite toppings"
+  "Description": "Fresh Italian Bread with Exotic mix of Veggies and Cheese"
 }]
