@@ -99,26 +99,15 @@ function updateCart(pizza) {
 
 addToCart.forEach(function (btn) {
   btn.addEventListener('click', function (e) {
-    var pizza = JSON.parse(btn.dataset.pizza); // this comes from data-pizza from button in home.ejs 
-    // after clicking we need to update the cart and send the pizza o the cart
-
-    updateCart(pizza); // console.log(pizza)
+    var pizza = JSON.parse(btn.dataset.pizza);
+    updateCart(pizza);
   });
-}); //  this automatically compiles and goes into the public folder due to laravel mix. 
-// not working:
-// const alertMsg = docuemnt.querySelector('#success-alert')
-// if(alertMsg){
-//     setTimeout(() => {
-//         alertMsg.remove()
-//     }, 2000)
-// }
-
-(0,_admin__WEBPACK_IMPORTED_MODULE_2__.initAdmin)(); // change order status
-
+});
+(0,_admin__WEBPACK_IMPORTED_MODULE_2__.initAdmin)();
 var statuses = document.querySelectorAll('.status_line');
 var order = document.querySelector('#hiddenInput') ? document.querySelector('#hiddenInput').value : null;
 order = JSON.parse(order);
-var time = document.createElement('small'); // console.log(order)
+var time = document.createElement('small');
 
 function updateStatus(order) {
   var StepCompleted = true;

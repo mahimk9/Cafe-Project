@@ -32,10 +32,7 @@ function updateCart(pizza){
 addToCart.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         let pizza = JSON.parse(btn.dataset.pizza)
-        // this comes from data-pizza from button in home.ejs 
-        // after clicking we need to update the cart and send the pizza o the cart
         updateCart(pizza)
-        // console.log(pizza)
     })
 })
 
