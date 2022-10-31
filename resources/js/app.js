@@ -38,22 +38,9 @@ addToCart.forEach((btn) => {
         // console.log(pizza)
     })
 })
-//  this automatically compiles and goes into the public folder due to laravel mix. 
-
-
-// not working:
-
-// const alertMsg = docuemnt.querySelector('#success-alert')
-// if(alertMsg){
-//     setTimeout(() => {
-//         alertMsg.remove()
-//     }, 2000)
-// }
-
 
 initAdmin()
 
-// change order status
 let statuses = document.querySelectorAll('.status_line')
 let order = document.querySelector('#hiddenInput') ? document.querySelector('#hiddenInput').value: null
 order = JSON.parse(order)
@@ -61,7 +48,6 @@ order = JSON.parse(order)
 
 let time = document.createElement('small')
 
-// console.log(order)
 function updateStatus(order){
     let StepCompleted = true;
     statuses.forEach((status) => {
